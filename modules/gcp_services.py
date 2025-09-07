@@ -23,7 +23,7 @@ class GCPServices:
         # Initialize Vertex AI
         try:
             vertexai.init(project=self.project_id, location=self.vertex_ai_location)
-            self.vertex_model = GenerativeModel("gemini-1.5-pro")
+            self.vertex_model = GenerativeModel("gemini-2.5-pro")
             self.vertex_available = True
             logging.info("Vertex AI initialized successfully")
         except Exception as e:
